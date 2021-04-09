@@ -1,0 +1,7 @@
+<div class="answers" #answersList [innerHtml]="htmlFromServer"></div>
+
+<ul class="questions" #questionsList >
+   <li *ngFor="let item of questionsFromServer"
+       (mouseup)="startSelectAnswer(item.id)"
+   >{{item.text}}</li>
+</ul>
