@@ -37,8 +37,6 @@ export class ServiceService {
         });
     }
 
-
-
     sendDataOnServer(aasd: {questionId: number, selectedText: string}): void {
         console.log('finish : ', aasd);
     }
